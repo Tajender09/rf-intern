@@ -1,0 +1,46 @@
+.teamContainer {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.membersContiner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  justify-content: space-between;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.memberText {
+  text-align: center;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 1200px) {
+  .teamContainer {
+    margin-top: 6rem;
+  }
+  h2 {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .membersContiner {
+    grid-template-columns: repeat(1, 200px);
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 799px) {
+  .membersContiner {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1280px) {
+  .teamContainer {
+    max-width: 800px;
+  }
+}

@@ -1,0 +1,30 @@
+.productContainer {
+  max-width: 200px;
+  cursor: pointer;
+}
+.productImage {
+  width: 100%;
+  height: 200px;
+  background-image: url("../../assets/grey-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.productImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.productContainer h3 {
+  margin: 10px 0 0;
+}
+
+.productInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productInfo p {
+  font-size: 0.9rem;
+  margin: 7px 0 0;
+}

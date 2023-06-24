@@ -1,0 +1,44 @@
+.contactMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contactBox {
+  min-width: 400px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: auto;
+  padding: 3rem 0;
+}
+
+@media screen and (min-width: 800px) {
+  .contactBox {
+    margin: 4rem;
+  }
+}
+.contactBox h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.contactList {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contactItem {
+  margin: 2rem 0;
+}
+
+.contactItem h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.contactItem p {
+  margin: 0;
+}
