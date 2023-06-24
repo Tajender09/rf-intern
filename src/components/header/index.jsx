@@ -7,7 +7,7 @@ const Header = () => {
   const headerRoutes = [
     {
       id: 1,
-      link: "/",
+      link: "/rf-intern",
       name: "Home",
     },
     {
@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <Link to="/">
+        <Link to="/rf-intern">
           <img src={logo} alt="logo" className="logo-img" />
         </Link>
 

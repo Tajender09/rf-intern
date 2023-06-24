@@ -12,7 +12,7 @@ function App() {
       element: <Header />,
       children: [
         {
-          path: "/",
+          path: "/rf-intern",
           element: <Home />,
         },
         {
