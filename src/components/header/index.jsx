@@ -6,11 +6,6 @@ import { FiUser } from "react-icons/fi";
 const Header = () => {
   const headerRoutes = [
     {
-      id: 1,
-      link: "/rf-intern",
-      name: "Home",
-    },
-    {
       id: 2,
       link: "/journey",
       name: "The Journey",
@@ -34,8 +29,8 @@ const Header = () => {
 
   return (
     <>
-      <header>
-        <Link to="/rf-intern">
+      <header className="wrapperWidth">
+        <Link to="/journey">
           <img src={logo} alt="logo" className="logo-img" />
         </Link>
 

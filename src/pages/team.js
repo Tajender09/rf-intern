@@ -48,7 +48,7 @@ const Team = () => {
     },
   ];
   return (
-    <div className="teamContainer">
+    <div className="teamContainer wrapperWidth">
       <h2 className="memberText">
         Without bounding and coordination, every projext is a failure. Look at
         who makes KICKSUP great. ;)

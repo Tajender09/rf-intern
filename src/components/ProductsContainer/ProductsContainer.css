@@ -1,3 +1,39 @@
-.productsContainer {
-  width: 50vw;
+.productsContainerHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productsContainerHeading h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.productsContainerHeading div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sortButton {
+  border: 1px solid black;
+  background-color: white;
+  font-size: 1rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.productsList {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  row-gap: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .productsList {
+    grid-template-columns: repeat(2, auto);
+  }
 }

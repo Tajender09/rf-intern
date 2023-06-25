@@ -1,14 +1,10 @@
-.journeyContainer {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
 .journeyHeading {
   width: 100%;
   height: 40vh;
   background-image: url("../assets/grasspic.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,4 +30,21 @@
   font-size: 4rem;
   letter-spacing: 10px;
   font-weight: normal;
+}
+
+.journeyContent {
+  background-color: black;
+  padding: 2rem;
+}
+
+.journeyContent h2,
+.journeyContent p {
+  margin: 0;
+  color: #fff;
+}
+.journeyContent h2 {
+  padding-top: 20px;
+}
+.journeyContent p {
+  margin-top: 10px;
 }

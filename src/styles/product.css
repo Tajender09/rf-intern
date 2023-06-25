@@ -1,0 +1,97 @@
+.productPage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productPageHeading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.productPageHeading h1 {
+  font-weight: normal;
+}
+
+.productPageHeading svg {
+  cursor: pointer;
+}
+
+.productPageContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.productPageImage {
+  height: 400px;
+  width: 400px;
+}
+.productPageImage img {
+  height: 100%;
+  width: 100%;
+}
+
+.productPageThumbnailContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.productPageThumbnail {
+  height: 120px;
+  object-fit: contain;
+}
+
+.productPageThumbnail img {
+  height: 100%;
+  width: 100%;
+}
+
+.cartBtn {
+  background-color: black;
+  color: #fff;
+  padding: 10px 1rem;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+
+.cartBtn:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.productPageName h2,
+.productPageName p {
+  margin: 0;
+}
+
+.productRating,
+.productPrice {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.ratingText,
+.priceText {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.sizeBox {
+  cursor: pointer;
+  margin-right: 5px;
+  border: 2px solid black;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.activeSizeBox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.5;
+}

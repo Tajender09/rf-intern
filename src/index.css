@@ -8,3 +8,15 @@ body {
   font-family: "Product";
   color: black;
 }
+
+.wrapperWidth {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.greybg {
+  background-image: url("/src/assets/grey-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

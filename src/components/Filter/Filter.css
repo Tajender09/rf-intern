@@ -1,0 +1,50 @@
+.filterHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filterHeading h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.colorsContainer {
+  display: flex;
+  gap: 15px;
+}
+
+.colorBlock {
+  position: relative;
+}
+
+.colorBlock label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 2px;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.activeColor::after {
+  content: "\2713";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  opacity: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnContainer {
+  margin-top: 1rem;
+}
