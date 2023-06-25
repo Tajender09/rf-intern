@@ -1,5 +1,4 @@
 import Header from "./components/header";
-import Home from "./pages/home";
 import Team from "./pages/team";
 import Contact from "./pages/contact";
 import Journey from "./pages/journey";
@@ -93,7 +92,7 @@ function App() {
       element: <Header />,
       children: [
         {
-          path: "/journey",
+          path: "/",
           element: <Journey />,
         },
         {

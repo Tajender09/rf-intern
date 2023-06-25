@@ -7,7 +7,7 @@ const Header = () => {
   const headerRoutes = [
     {
       id: 2,
-      link: "/journey",
+      link: "/",
       name: "The Journey",
     },
     {
@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <>
       <header className="wrapperWidth">
-        <Link to="/journey">
+        <Link to="/">
           <img src={logo} alt="logo" className="logo-img" />
         </Link>
 
