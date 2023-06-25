@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/rf-intern/static/css/main.19e60bd5.css",
-    "main.js": "/rf-intern/static/js/main.85f9a679.js",
-    "static/media/shoe2.png": "/rf-intern/static/media/shoe2.ef5414e508ed55925e20.png",
-    "static/media/shoe3.png": "/rf-intern/static/media/shoe3.5d18396d91343988d6ed.png",
-    "static/media/grasspic.jpg": "/rf-intern/static/media/grasspic.60d418585600b05647eb.jpg",
-    "static/media/shoe.png": "/rf-intern/static/media/shoe.578d7c7e55c2fa1a31f4.png",
-    "static/media/Product_Sans.ttf": "/rf-intern/static/media/Product_Sans.863727019c4716c4dc24.ttf",
-    "static/media/ikercasillas.jpeg": "/rf-intern/static/media/ikercasillas.444ec1ffc2a73c92bf80.jpeg",
-    "static/media/christiano.jpg": "/rf-intern/static/media/christiano.fb49fda8e29ae0300176.jpg",
-    "static/media/grey-bg.jpg": "/rf-intern/static/media/grey-bg.c1051d62846960ce3459.jpg",
-    "static/media/medium.png": "/rf-intern/static/media/medium.b87629cbe6267bf69b33.png",
-    "static/media/tonikroos.jpg": "/rf-intern/static/media/tonikroos.29d695804d678eee9add.jpg",
-    "static/media/zidane.jpg": "/rf-intern/static/media/zidane.4025a1ccc7e165db5929.jpg",
-    "static/media/insta.svg": "/rf-intern/static/media/insta.47862a9f317959c3d5fc29700d0ca6af.svg",
-    "static/media/twitter.svg": "/rf-intern/static/media/twitter.db8bd1d176685f75ed42db090f4d126c.svg",
-    "static/media/facebook.svg": "/rf-intern/static/media/facebook.6b4f7afe6ec5cf535062865a07aba10b.svg",
-    "index.html": "/rf-intern/index.html",
-    "main.19e60bd5.css.map": "/rf-intern/static/css/main.19e60bd5.css.map",
-    "main.85f9a679.js.map": "/rf-intern/static/js/main.85f9a679.js.map"
+    "main.css": "/journey/static/css/main.0603fc20.css",
+    "main.js": "/journey/static/js/main.098d08ad.js",
+    "static/media/shoe2.png": "/journey/static/media/shoe2.ef5414e508ed55925e20.png",
+    "static/media/shoe3.png": "/journey/static/media/shoe3.5d18396d91343988d6ed.png",
+    "static/media/grasspic.jpg": "/journey/static/media/grasspic.60d418585600b05647eb.jpg",
+    "static/media/shoe.png": "/journey/static/media/shoe.578d7c7e55c2fa1a31f4.png",
+    "static/media/Product_Sans.ttf": "/journey/static/media/Product_Sans.863727019c4716c4dc24.ttf",
+    "static/media/ikercasillas.jpeg": "/journey/static/media/ikercasillas.444ec1ffc2a73c92bf80.jpeg",
+    "static/media/christiano.jpg": "/journey/static/media/christiano.fb49fda8e29ae0300176.jpg",
+    "static/media/grey-bg.jpg": "/journey/static/media/grey-bg.c1051d62846960ce3459.jpg",
+    "static/media/medium.png": "/journey/static/media/medium.b87629cbe6267bf69b33.png",
+    "static/media/tonikroos.jpg": "/journey/static/media/tonikroos.29d695804d678eee9add.jpg",
+    "static/media/zidane.jpg": "/journey/static/media/zidane.4025a1ccc7e165db5929.jpg",
+    "static/media/insta.svg": "/journey/static/media/insta.47862a9f317959c3d5fc29700d0ca6af.svg",
+    "static/media/twitter.svg": "/journey/static/media/twitter.db8bd1d176685f75ed42db090f4d126c.svg",
+    "static/media/facebook.svg": "/journey/static/media/facebook.6b4f7afe6ec5cf535062865a07aba10b.svg",
+    "index.html": "/journey/index.html",
+    "main.0603fc20.css.map": "/journey/static/css/main.0603fc20.css.map",
+    "main.098d08ad.js.map": "/journey/static/js/main.098d08ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.19e60bd5.css",
-    "static/js/main.85f9a679.js"
+    "static/css/main.0603fc20.css",
+    "static/js/main.098d08ad.js"
   ]
 }
