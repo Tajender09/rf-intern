@@ -10,7 +10,6 @@ export const reducer = (state, action) => {
 
     case "APPLY_FILTERS":
       const { categories, colors, costs, costsArray } = action.payload;
-      const { min = "", max = "" } = costs;
       return {
         ...state,
         appliedFilters: {
@@ -24,8 +23,10 @@ export const reducer = (state, action) => {
             (categories.some((category) => category === data.category) ||
               !categories.length) &&
             (colors.some((color) => color === data.color) || !colors.length) &&
-            (data.price >= +min || !min.length) &&
-            (data.price < +max || !max.length)
+            costs.some(
+              ({ min, max }) =>
+                data.price >= +min && (data.price < +max || !max.length)
+            )
         ),
       };
 

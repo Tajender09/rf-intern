@@ -40,26 +40,20 @@ const Filter = () => {
   };
 
   const handleApply = () => {
-    let costs = {};
+    let costs = [];
     if (costsArray.length) {
-      let min =
-        costsArray[0].split("-")[0] || costsArray[0].split("+")[0] || "";
-      let max = costsArray[0].split("-")[1] || "";
-      costsArray.forEach((item) => {
-        if (item.includes("-")) {
-          if (item.split("-")[0] < min) {
-            min = item.split("-")[0];
-          } else if (item.split("-")[1] > max) {
-            max = item.split("-")[1];
-          }
-        } else if (item.includes("+")) {
-          if (item.split("+")[0] < min) {
-            min = item.split("+")[0];
-          }
+      costsArray.forEach((cost) => {
+        let min = "";
+        let max = "";
+        if (cost.includes("-")) {
+          min = cost.split("-")[0];
+          max = cost.split("-")[1];
+        } else {
+          min = cost.split("+")[0];
           max = "";
         }
+        costs = [...costs, { min, max }];
       });
-      costs = { min, max };
     }
     dispatch({
       method: "APPLY_FILTERS",
