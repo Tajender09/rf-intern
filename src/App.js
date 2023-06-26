@@ -74,6 +74,26 @@ const storeData = [
     category: "sneakers",
     color: "white",
   },
+  {
+    id: 7,
+    name: "KSL 01",
+    price: 9000,
+    rating: 3,
+    image: shoeImg,
+    company: "KICKSUP",
+    category: "sneakers",
+    color: "black",
+  },
+  {
+    id: 8,
+    name: "Royal S 01",
+    price: 12000,
+    rating: 4,
+    image: shoe2Img,
+    company: "ROYAL",
+    category: "sneakers",
+    color: "white",
+  },
 ];
 
 const initialState = {
