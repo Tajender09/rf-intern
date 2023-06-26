@@ -23,10 +23,12 @@ export const reducer = (state, action) => {
             (categories.some((category) => category === data.category) ||
               !categories.length) &&
             (colors.some((color) => color === data.color) || !colors.length) &&
-            costs.some(
+            (costs.some(
               ({ min, max }) =>
-                data.price >= +min && (data.price < +max || !max.length)
-            )
+                (data.price >= +min || !min.length) &&
+                (data.price < +max || !max.length)
+            ) ||
+              !costs.length)
         ),
       };
 
