@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/journey/static/css/main.0603fc20.css",
-    "main.js": "/journey/static/js/main.098d08ad.js",
-    "static/media/shoe2.png": "/journey/static/media/shoe2.ef5414e508ed55925e20.png",
-    "static/media/shoe3.png": "/journey/static/media/shoe3.5d18396d91343988d6ed.png",
-    "static/media/grasspic.jpg": "/journey/static/media/grasspic.60d418585600b05647eb.jpg",
-    "static/media/shoe.png": "/journey/static/media/shoe.578d7c7e55c2fa1a31f4.png",
-    "static/media/Product_Sans.ttf": "/journey/static/media/Product_Sans.863727019c4716c4dc24.ttf",
-    "static/media/ikercasillas.jpeg": "/journey/static/media/ikercasillas.444ec1ffc2a73c92bf80.jpeg",
-    "static/media/christiano.jpg": "/journey/static/media/christiano.fb49fda8e29ae0300176.jpg",
-    "static/media/grey-bg.jpg": "/journey/static/media/grey-bg.c1051d62846960ce3459.jpg",
-    "static/media/medium.png": "/journey/static/media/medium.b87629cbe6267bf69b33.png",
-    "static/media/tonikroos.jpg": "/journey/static/media/tonikroos.29d695804d678eee9add.jpg",
-    "static/media/zidane.jpg": "/journey/static/media/zidane.4025a1ccc7e165db5929.jpg",
-    "static/media/insta.svg": "/journey/static/media/insta.47862a9f317959c3d5fc29700d0ca6af.svg",
-    "static/media/twitter.svg": "/journey/static/media/twitter.db8bd1d176685f75ed42db090f4d126c.svg",
-    "static/media/facebook.svg": "/journey/static/media/facebook.6b4f7afe6ec5cf535062865a07aba10b.svg",
-    "index.html": "/journey/index.html",
-    "main.0603fc20.css.map": "/journey/static/css/main.0603fc20.css.map",
-    "main.098d08ad.js.map": "/journey/static/js/main.098d08ad.js.map"
+    "main.css": "/static/css/main.64474c8e.css",
+    "main.js": "/static/js/main.581c5ca3.js",
+    "static/media/shoe2.png": "/static/media/shoe2.ef5414e508ed55925e20.png",
+    "static/media/shoe3.png": "/static/media/shoe3.5d18396d91343988d6ed.png",
+    "static/media/grasspic.jpg": "/static/media/grasspic.60d418585600b05647eb.jpg",
+    "static/media/shoe.png": "/static/media/shoe.578d7c7e55c2fa1a31f4.png",
+    "static/media/Product_Sans.ttf": "/static/media/Product_Sans.863727019c4716c4dc24.ttf",
+    "static/media/ikercasillas.jpeg": "/static/media/ikercasillas.444ec1ffc2a73c92bf80.jpeg",
+    "static/media/christiano.jpg": "/static/media/christiano.fb49fda8e29ae0300176.jpg",
+    "static/media/grey-bg.jpg": "/static/media/grey-bg.c1051d62846960ce3459.jpg",
+    "static/media/medium.png": "/static/media/medium.b87629cbe6267bf69b33.png",
+    "static/media/tonikroos.jpg": "/static/media/tonikroos.29d695804d678eee9add.jpg",
+    "static/media/zidane.jpg": "/static/media/zidane.4025a1ccc7e165db5929.jpg",
+    "static/media/insta.svg": "/static/media/insta.47862a9f317959c3d5fc29700d0ca6af.svg",
+    "static/media/twitter.svg": "/static/media/twitter.db8bd1d176685f75ed42db090f4d126c.svg",
+    "static/media/facebook.svg": "/static/media/facebook.6b4f7afe6ec5cf535062865a07aba10b.svg",
+    "index.html": "/index.html",
+    "main.64474c8e.css.map": "/static/css/main.64474c8e.css.map",
+    "main.581c5ca3.js.map": "/static/js/main.581c5ca3.js.map"
   },
   "entrypoints": [
-    "static/css/main.0603fc20.css",
-    "static/js/main.098d08ad.js"
+    "static/css/main.64474c8e.css",
+    "static/js/main.581c5ca3.js"
   ]
 }
