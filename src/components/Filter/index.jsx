@@ -6,14 +6,14 @@ import {
   colorsFilter,
   costFilter,
 } from "./filters.constants";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { StoreContext } from "../../App";
 
 const Filter = () => {
   const { dispatch, appliedFilters } = useContext(StoreContext);
   const [categories, setCategories] = useState(appliedFilters.categories || []);
   const [colors, setColors] = useState(appliedFilters.colors || []);
-  const [costs, setCosts] = useState(appliedFilters.cost || []);
+  const [costsArray, setCostsArray] = useState(appliedFilters.costs || []);
 
   const handleCategoryChange = (e, category) => {
     if (e.target.checked) {
@@ -33,31 +33,19 @@ const Filter = () => {
 
   const handleCostChange = (e, cost) => {
     if (e.target.checked) {
-      setCosts((prev) => [...prev, cost]);
+      setCostsArray((prev) => [...prev, cost]);
     } else {
-      setCosts((prev) => prev.filter((item) => item !== cost));
+      setCostsArray((prev) => prev.filter((item) => item !== cost));
     }
   };
 
   const handleApply = () => {
-    if (categories.length) {
-      dispatch({
-        method: "APPLY_CATEGORY",
-        payload: categories,
-      });
-    }
-
-    if (colors.length) {
-      dispatch({
-        method: "APPLY_COLOR",
-        payload: colors,
-      });
-    }
-
-    if (costs.length) {
-      let min = costs[0].split("-")[0];
-      let max = costs[0].split("-")[1];
-      costs.forEach((item) => {
+    let costs = {};
+    if (costsArray.length) {
+      let min =
+        costsArray[0].split("-")[0] || costsArray[0].split("+")[0] || "";
+      let max = costsArray[0].split("-")[1] || "";
+      costsArray.forEach((item) => {
         if (item.includes("-")) {
           if (item.split("-")[0] < min) {
             min = item.split("-")[0];
@@ -65,21 +53,38 @@ const Filter = () => {
             max = item.split("-")[1];
           }
         } else if (item.includes("+")) {
-          min = item.split("+")[0];
+          if (item.split("+")[0] < min) {
+            min = item.split("+")[0];
+          }
+          max = "";
         }
       });
-      dispatch({
-        method: "APPLY_COST",
-        payload: { min, max },
-      });
+      costs = { min, max };
     }
+    dispatch({
+      method: "APPLY_FILTERS",
+      payload: { colors, categories, costs, costsArray },
+    });
   };
-
   const handleReset = () => {
     dispatch({
       method: "RESET_FILTERS",
     });
   };
+
+  useEffect(() => {
+    if (!appliedFilters.categories.length) {
+      setCategories([]);
+    }
+
+    if (!appliedFilters.colors.length) {
+      setColors([]);
+    }
+
+    if (!appliedFilters.costs.length) {
+      setCostsArray([]);
+    }
+  }, [appliedFilters]);
   return (
     <Container width={18}>
       <div className="filterHeading">
@@ -95,6 +100,7 @@ const Filter = () => {
             return (
               <div>
                 <input
+                  checked={costsArray.includes(cost.code)}
                   value={cost.code}
                   name={cost.code}
                   type="checkbox"

@@ -8,42 +8,24 @@ export const reducer = (state, action) => {
         cartData: state.cartData.filter((data) => data.id !== action.payload),
       };
 
-    case "APPLY_CATEGORY":
+    case "APPLY_FILTERS":
+      const { categories, colors, costs, costsArray } = action.payload;
+      const { min = "", max = "" } = costs;
       return {
         ...state,
         appliedFilters: {
           ...state.appliedFilters,
-          categories: action.payload,
+          colors,
+          categories,
+          costs: costsArray,
         },
-        storeData: state.storeData.filter((data) =>
-          action.payload.includes(data.category)
-        ),
-      };
-
-    case "APPLY_COLOR":
-      return {
-        ...state,
-        appliedFilters: {
-          ...state.appliedFilters,
-          colors: action.payload,
-        },
-        storeData: state.storeData.filter((data) =>
-          action.payload.includes(data.color)
-        ),
-      };
-
-    case "APPLY_COST":
-      return {
-        ...state,
-        appliedFilters: {
-          ...state.appliedFilters,
-          cost: action.payload,
-        },
-        storeData: state.storeData.filter((data) =>
-          action.payload.max
-            ? data.price > +action.payload.min &&
-              data.price < +action.payload.max
-            : data.price > +action.payload.min
+        filteredData: state.storeData.filter(
+          (data) =>
+            (categories.some((category) => category === data.category) ||
+              !categories.length) &&
+            (colors.some((color) => color === data.color) || !colors.length) &&
+            (data.price >= +min || !min.length) &&
+            (data.price < +max || !max.length)
         ),
       };
 
@@ -51,11 +33,12 @@ export const reducer = (state, action) => {
       return {
         ...state,
         appliedFilters: {
-          categories: [],
+          ...state.appliedFilters,
           colors: [],
-          prices: [],
+          categories: [],
+          costs: [],
         },
-        storeData: state.initialStore,
+        filteredData: state.storeData,
       };
     default:
       return state;

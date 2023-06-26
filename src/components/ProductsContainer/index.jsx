@@ -6,7 +6,7 @@ import { StoreContext } from "../../App";
 import { useContext } from "react";
 
 const ProductsContainer = () => {
-  const { storeData } = useContext(StoreContext);
+  const { filteredData } = useContext(StoreContext);
 
   return (
     <Container width={45}>
@@ -17,11 +17,15 @@ const ProductsContainer = () => {
           <button className="sortButton">Sort by</button>
         </div>
       </div>
-      <div className="productsList">
-        {storeData.map((product) => {
-          return <ProductCard product={product} />;
-        })}
-      </div>
+      {filteredData.length ? (
+        <div className="productsList">
+          {filteredData.map((product) => {
+            return <ProductCard product={product} />;
+          })}
+        </div>
+      ) : (
+        <h2 style={{ textAlign: "center" }}>No results found!</h2>
+      )}
     </Container>
   );
 };

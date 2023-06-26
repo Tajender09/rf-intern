@@ -78,12 +78,12 @@ const storeData = [
 
 const initialState = {
   storeData,
-  initialStore: storeData,
+  filteredData: storeData,
   cartData: [],
   appliedFilters: {
     categories: [],
     colors: [],
-    cost: [],
+    costs: [],
   },
 };
 function App() {
